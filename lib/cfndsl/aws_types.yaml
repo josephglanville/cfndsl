@@ -170,6 +170,21 @@ Resources:
   "AWS::EC2::InternetGateway" :
    Properties:
     Tags: [ EC2Tag ]
+  "AWS::EC2::VPNGateway":
+    Properties:
+     Type: String
+     Tags: [ EC2Tag ]
+  "AWS::EC2::VPNConnection":
+    Properties:
+     Type: String
+     CustomerGatewayId: String
+     StaticRoutesOnly: Boolean
+     VpnGatewayId: String
+     Tags: [ EC2Tag ]
+  "AWS::EC2::VPNGatewayRoutePropagation":
+    Properties:
+     RouteTableIds: [ String ]
+     VpnGatewayId: String
   "AWS::EC2::NetworkAclEntry" :
     Properties:
      Tags: [ EC2Tag ]
